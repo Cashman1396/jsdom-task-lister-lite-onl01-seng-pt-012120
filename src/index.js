@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-taskUl.addEventListener("click", (e) => {
+  taskUl.addEventListener("click", (e) => {
     if (e.target.nodeName === "BUTTON") {
       taskList.deleteTask(e.target.dataset.description);
       renderApp();
