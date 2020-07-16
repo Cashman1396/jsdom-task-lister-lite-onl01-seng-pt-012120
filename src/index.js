@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const taskUl = document.getElementById("tasks");
 
    const renderApp = () => (taskUl.innerHTML = taskList.renderTasks());
-newTaskForm.addEventListener("submit", (e) => {
+
+
+  newTaskForm.addEventListener("submit", (e) => {
    e.preventDefault();
    taskList.createNewTask(newTaskDescription.value);
    // reset form
