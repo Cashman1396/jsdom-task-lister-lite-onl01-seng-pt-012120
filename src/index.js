@@ -17,6 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
    e.target.reset();
    renderApp();
 
+});
 
-
+taskUl.addEventListener("click", (e) => {
+    if (e.target.nodeName === "BUTTON") {
+      taskList.deleteTask(e.target.dataset.description);
+      renderApp();
+    }
+  });
 });
